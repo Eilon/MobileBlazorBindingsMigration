@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.MobileBlazorBindings;
 using Microsoft.Extensions.Hosting;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace mobileblazorbindings_app
@@ -9,7 +10,7 @@ namespace mobileblazorbindings_app
     {
         public App()
         {
-            var host = Host.CreateDefaultBuilder()
+            var host = MobileBlazorBindingsHost.CreateDefaultBuilder()
                 .ConfigureServices((hostContext, services) =>
                 {
                     // Register app-specific services
@@ -17,7 +18,8 @@ namespace mobileblazorbindings_app
                 })
                 .Build();
 
-            host.AddComponent<HelloWorld>(parent: this);
+            MainPage = new ContentPage();
+            host.AddComponent<HelloWorld>(parent: MainPage);
         }
 
         protected override void OnStart()
