@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7B2C0F17-AC93-47B3-863F-9B9E7FB7478E}</ProjectGuid>
+    <ProjectGuid>{B99525F2-DAE9-41B9-B794-E45DD5EC569A}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -114,6 +114,9 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -122,15 +125,15 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.iOS" Version="0.4.74-preview" />
+    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.iOS" Version="0.5.50-preview" />
     <PackageReference Include="System.Memory" Version="4.5.4" IncludeAssets="None" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\blazorhybrid_app\blazorhybrid_app.csproj">
-      <Project>{C35BB129-241A-481E-A869-0158F395A8C7}</Project>
+      <Project>{B2D5152E-4D43-432C-B832-CFFCAF2DECD2}</Project>
       <Name>blazorhybrid_app</Name>
     </ProjectReference>
   </ItemGroup>

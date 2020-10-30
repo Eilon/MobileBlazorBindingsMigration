@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5FFA1F2-9C12-4E6A-ADDE-40CF1AA5B78C}</ProjectGuid>
+    <ProjectGuid>{5D2530BA-B20E-4671-AE52-EC55A2E55299}</ProjectGuid>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HybridApp.macOS</RootNamespace>
-    <AssemblyName>HybridApp.macOS</AssemblyName>
+    <RootNamespace>blazorhybrid_app.macOS</RootNamespace>
+    <AssemblyName>blazorhybrid_app.macOS</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
@@ -93,15 +93,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.macOS" Version="0.4.74-preview" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <Content Include="Resources\wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.macOS" Version="0.5.50-preview" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="System.Memory" Version="4.5.4" IncludeAssets="None" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\blazorhybrid_app\blazorhybrid_app.csproj">
-      <Project>{C35BB129-241A-481E-A869-0158F395A8C7}</Project>
+      <Project>{B2D5152E-4D43-432C-B832-CFFCAF2DECD2}</Project>
       <Name>blazorhybrid_app</Name>
     </ProjectReference>
   </ItemGroup>

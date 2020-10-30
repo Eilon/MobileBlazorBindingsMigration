@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03A63E14-0512-4148-905E-104EC4C85879}</ProjectGuid>
+    <ProjectGuid>{D3DC5DBB-5776-44AA-A0C5-E7072D35C69D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -56,10 +56,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.Android" Version="0.4.74-preview" />
+    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.Android" Version="0.5.50-preview" />
     <PackageReference Include="System.Text.Encodings.Web" Version="4.7.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -93,8 +93,13 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="wwwroot\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\blazorhybrid_app\blazorhybrid_app.csproj">
-      <Project>{C35BB129-241A-481E-A869-0158F395A8C7}</Project>
+      <Project>{B2D5152E-4D43-432C-B832-CFFCAF2DECD2}</Project>
       <Name>blazorhybrid_app</Name>
     </ProjectReference>
   </ItemGroup>
