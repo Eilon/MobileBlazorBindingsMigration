@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2CF33C98-6202-46BA-8600-93B5C7FF0509}</ProjectGuid>
+    <ProjectGuid>{7B2C0F17-AC93-47B3-863F-9B9E7FB7478E}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>mobileblazorbindings_app.iOS</RootNamespace>
+    <RootNamespace>blazorhybrid_app.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>mobileblazorbindings_app.iOS</AssemblyName>
+    <AssemblyName>blazorhybrid_app.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
@@ -122,14 +122,16 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.MobileBlazorBindings.WebView.iOS" Version="0.4.74-preview" />
+    <PackageReference Include="System.Memory" Version="4.5.4" IncludeAssets="None" />
     <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\mobileblazorbindings_app\mobileblazorbindings_app.csproj">
-      <Project>{586A3703-0BDB-4B21-B17F-7341DEA4C17B}</Project>
-      <Name>mobileblazorbindings_app</Name>
+    <ProjectReference Include="..\blazorhybrid_app\blazorhybrid_app.csproj">
+      <Project>{C35BB129-241A-481E-A869-0158F395A8C7}</Project>
+      <Name>blazorhybrid_app</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
