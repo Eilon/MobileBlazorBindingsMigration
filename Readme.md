@@ -11,4 +11,4 @@ Use the tags in this repo to diff between the template output of each version of
 
 ## License
 
-See the [License](LICENSE) file for details.
+See the [License](LICENSE.txt) file for details.
